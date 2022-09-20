@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9b81cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #f1f3f5;
+  box-shadow: inset 2px 3px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.display {
+  background-color: #f1f3f5;
+  box-shadow: inset 2px 3px 11px rgb(0, 0, 0, 0.16), 5px 5px 12px #fff;
+  height: 30%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display input {
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  font-size: 30px;
+  width: 90%;
+  outline: none;
+  font-family: "Sriracha", cursive;
+}
+
+.buttom {
+  height: 70%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tombol-kiri {
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.tombol.nol {
+  grid-column: 1 / 3;
+  border-radius: 25px;
+  width: 100%;
+}
+.tombol {
+  background-color: #f1f3f5;
+  box-shadow: inset 2px 3px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: #6e85b7;
+  font-weight: bolder;
+  font-family: "Sriracha", cursive;
+}
+
+.tombol:hover {
+  transform: scale(0.9);
+}
+
+.tombol-kanan {
+  background-color: #526dac;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 12px rgb(0, 0, 0, 0.26), 5px 5px 12px #bebce3;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ac,
+.plus__minus,
+.persen {
+  background: #6e85b7;
+  color: #fff;
+}
+@media screen and (max-width: 428px) {
+  body {
+    padding: 0;
+    height: 100vh;
+  }
+  .card {
+    border-radius: 0;
+    margin: 2rem 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
